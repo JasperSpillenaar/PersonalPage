@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+  justify-content: stretch;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-gap: 10px 10px;
+  grid-template-areas: 'area1 area2 area2 area2 area2' 'area1 area5 area5 area5 area3' 'area1 area5 area5 area5 area3' 'area4 area4 area4 area4 area4'; }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.502);
+  text-align: center;
+  font-size: 30px;
+  border: 2px solid black; }
+
+.item1 {
+  grid-area: area1; }
+
+.item2 {
+  grid-area: area2; }
+
+.item3 {
+  grid-area: area3;
+  font-family: 'Trebuchet MS'; }
+
+.spotify-text {
+  margin-bottom: 3%; }
+
+.spotify-list {
+  margin-top: 2%; }
+
+.item4 {
+  grid-area: area4; }
+
+.item5 {
+  grid-area: area5; }
+
+.item6 {
+  grid-area: area6; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+canvas {
+  position: absolute;
+  vertical-align: top;
+  top: 0%;
+  z-index: -1; }
+
+h3 {
+  font-family: trebuchet MS; }
+
+.banner {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 30% 50%;
+  grid-gap: 0px 0px;
+  grid-template-areas: ". banner__title banner__title ." ". . banner__subtext .";
+  height: 40vh;
+  border: 2px solid black;
+  text-align: center;
+  background-image: url(../IMG/images/banner.jpg);
+  background-size: 100%; }
+  .banner__title {
+    grid-area: banner__title;
+    font-family: 'Sigmar One', cursive;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px grey;
+    padding-top: 4%; }
+  .banner__subtext {
+    grid-area: banner__subtext;
+    font-family: 'Sigmar One', cursive;
+    font-size: 1rem;
+    text-shadow: 2px 2px grey;
+    color: white;
+    justify-self: end;
+    padding-top: 8%;
+    margin-right: 2%; }
+
+.text__intro {
+  width: 100vh;
+  height: 15vh;
+  border: 5px solid #d3d3d3;
+  box-shadow: 5px 5px black;
+  margin-left: auto;
+  margin-right: auto; }
+
+p {
+  color: green; }
+
+.navigation-list {
+  text-align: center; }
+
+.navigation-list-item {
+  list-style-type: none; }
+
+/*# sourceMappingURL=styles.css.map */
